@@ -1,12 +1,12 @@
-export const NOTE_TAGS = [
+export type NoteTag = 'Todo' | 'Work' | 'Personal' | 'Meeting' | 'Shopping';
+
+export const NOTE_TAGS: NoteTag[] = [
   'Todo',
   'Work',
   'Personal',
   'Meeting',
   'Shopping',
-] as const;
-
-export type NoteTag = (typeof NOTE_TAGS)[number];
+];
 
 export interface Note {
   id: string;
@@ -15,4 +15,23 @@ export interface Note {
   tag: NoteTag;
   createdAt: string;
   updatedAt: string;
+}
+
+export interface FetchNotesParams {
+  page: number;
+  perPage: number;
+  search?: string;
+  sortBy?: 'created' | 'updated';
+  tag?: NoteTag;
+}
+
+export interface FetchNotesResponse {
+  notes: Note[];
+  totalPages: number;
+}
+
+export interface CreateNoteData {
+  title: string;
+  content: string;
+  tag: NoteTag;
 }
