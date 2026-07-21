@@ -13,9 +13,11 @@
 
 .menuLink {
   display: block;
-  padding: 8px 12px;
+  padding: 10px 12px;
   color: #1f2937;
   text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 6px;
 }
 

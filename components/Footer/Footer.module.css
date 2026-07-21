@@ -1,0 +1,26 @@
+.footer {
+  padding: 24px 32px;
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer a {
+  margin-left: 6px;
+  color: #93c5fd;
+  text-decoration: none;
+}
