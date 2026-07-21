@@ -1,4 +1,26 @@
 .main {
+  flex: 1;
+  padding: 32px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.description {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.main {
   min-height: calc(100vh - 140px);
   display: flex;
   align-items: center;
