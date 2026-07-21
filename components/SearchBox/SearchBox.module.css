@@ -1,9 +1,7 @@
 .input {
-  width: 280px;
-  padding: 10px 12px;
-  font: inherit;
-  color: #111827;
-  background-color: #ffffff;
+  width: 240px;
+  padding: 8px 12px;
+  font-size: 16px;
   border: 1px solid #d1d5db;
   border-radius: 6px;
   outline: none;
